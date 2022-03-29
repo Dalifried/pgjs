@@ -1,0 +1,84 @@
+body {
+    background: rgb(31,4,27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(60,240,58);
+    font-family: Courier;
+}
+img {
+    image-rendering: pixelated;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+}
+a {
+    color: rgb(60,240,58);
+}
+@font-face {
+    src: url("./pico.ttf");
+    font-family: pico;
+}
+#player_map {
+    background-color: transparent;
+    overflow: hidden;
+    transform: scale(8);
+    position: absolute;
+    display: none;
+    height: 35px;
+    width: 50px;
+    top: 155px;
+}
+#images_map {
+    background-image: none;
+    background: #333;
+    overflow: hidden;
+    transform: scale(8);
+    display: none;
+    position: absolute;
+    height: 35px;
+    width: 50px;
+    top: 155px;
+}
+#startScreen {
+    height: 340px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+#title {
+    text-align: center;
+    font-size: 28px;
+}
+#author {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    bottom: 20px;
+    left: 90px;
+}
+#homepage {
+    text-align: center;
+    position: relative;
+    top: 160px;
+}
+#start {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    top: 30px;
+}
+#controls {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    
+}
+#endScreen {
+    height: 340px;
+    width: 400px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgb(4,10,36);
+}
