@@ -1,6 +1,6 @@
 # Puzzle Game JS
 
-you can create new objects use `entity = new object("map_type","iamge src") `
+you can create new objects using `entity = new object("map_type","iamge src") `
 
 add entity functions by editing `objects.js`
 
