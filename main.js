@@ -1,3 +1,8 @@
+window.onload = function() {
+  let author = document.getElementById("author");
+  let homepage = document.getElementById("homepage");
+  let homepage_link = document.getElementById("homepage_link");
+}
 let CLOCK = setInterval(clock, 20),
   goal = new Audio("./goal.wav"),
   LEVEL = 1,
@@ -5,7 +10,7 @@ let CLOCK = setInterval(clock, 20),
   // start screen keys
   startKeys = setInterval(function () {
   document.addEventListener("keydown", function () {
-    if ((!started && event.keyCode == 75) || event.keyCode == 88) {
+    if ((!started && event.keyCode == 75) || (!started && event.keyCode == 88)) {
       document.getElementById("start").innerHTML =
         "########## start game ##########";
       var s = setInterval(function () {
@@ -20,15 +25,6 @@ let CLOCK = setInterval(clock, 20),
     }
   });
 }, 20);
-let map_grid = [
-  ["#","#","#","#","#","#","#","#","#","#"],
-  ["#","@",".",".",".",".",".",".",".","."],
-  ["#",".",".",".",".",".",".",".",".","."],
-  ["#",".",".",".",".",".",".",".",".","."],
-  ["#",".",".",".",".",".",".",".",".","."],
-  ["#",".",".",".",".",".",".",".",".","."],
-  [".",".",".",".",".",".",".",".",".","."],
-];
 let npc = [],
   wall = [],
   p;
