@@ -1,4 +1,5 @@
 window.onload = function() {
+  let game_title = document,getElementById("title");
   let author = document.getElementById("author");
   let homepage = document.getElementById("homepage");
   let homepage_link = document.getElementById("homepage_link");
@@ -9,9 +10,11 @@ let CLOCK = setInterval(clock, 20),
   started = false,
   // start screen keys
   startKeys = setInterval(function () {
+  document.querySelector("title").value = TITLE;
+  game_title.value = TITLE;
   author.value = AUTHOR_NAME;
-  homepage = AUTHOR_HOMEPAGE;
-  homepage_link = HOMEPAGE_LINK;
+  homepage.value = AUTHOR_HOMEPAGE;
+  homepage_link.value = AUTHOR_HOMEPAGE_LINK;
   document.addEventListener("keydown", function () {
     if ((!started && event.keyCode == 75) || (!started && event.keyCode == 88)) {
       document.getElementById("start").innerHTML =
