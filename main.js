@@ -9,6 +9,9 @@ let CLOCK = setInterval(clock, 20),
   started = false,
   // start screen keys
   startKeys = setInterval(function () {
+  author.value = AUTHOR_NAME;
+  homepage = AUTHOR_HOMEPAGE;
+  homepage_link = HOMEPAGE_LINK;
   document.addEventListener("keydown", function () {
     if ((!started && event.keyCode == 75) || (!started && event.keyCode == 88)) {
       document.getElementById("start").innerHTML =
